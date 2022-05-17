@@ -11,7 +11,6 @@ router.get('/',(req,res) =>{
   /*  res.render('../Views/Partials/mostrarProductos.ejs',{
        products
    }) */
-   
 })
 
 router.post('/',(req,res) =>{
