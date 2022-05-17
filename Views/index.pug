@@ -1,0 +1,25 @@
+html 
+
+    head 
+        title='Agregar Productos'
+
+        style. 
+            input{
+                width: 20%;
+                height: 40px;
+                border-radius: 10px;
+                margin: 20px;
+            }
+            button{
+                font-size: 20px;
+                border-radius: 10px; 
+            }
+    body 
+
+        form(action="/productos" method="POST")
+            input(type="text" placeholder="Nombre del productos..." name="nombre") 
+            input(type="number" placeholder="precio..." name="precio")
+            input(type="url" placeholder='url...' name="url")
+            button agregar
+        
+        

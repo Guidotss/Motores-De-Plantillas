@@ -1,0 +1,32 @@
+html 
+    head 
+        title='productos'
+
+        style.
+            table,th,td{
+                font-size:30px;
+                border:1px solid black;
+                border-collapse: collapse
+            }
+    body
+    if products.length>0
+      table(style='width:100%') 
+        tr
+            th="Nombre"
+            th="Precio"
+            th="Url"
+
+        each prod in products 
+            tr 
+                td=prod.nombre 
+                td=prod.precio 
+                td=prod.url 
+        
+    else
+        h2="No hay ningun producto agregado"
+
+        
+        
+    
+
+        
