@@ -6,10 +6,12 @@ const routesProductos = require('./Routes/routesProductos');
 
 app.use(morgan('dev')); 
 app.use(express.urlencoded({extended: true}));
+app.use(express.static('./Views/Styles'))
 app.use(express.json()); 
 app.use('/productos',routesProductos); 
 app.set('views', './Views'); 
-//app.set('view engine','pug');   
+app.set('view engine','pug');   
+//app.set('view engine','ejs')
 
 
 
@@ -21,6 +23,8 @@ const server = app.listen(PORT, () =>{
 server.on('error', err => console.log(err)); 
 
 
-/* app.get('/',(req,res) => {
+app.get('/',(req,res) => {
     res.render('index.pug')
-}) */
+
+    //res.render('root.ejs'); 
+}) 
